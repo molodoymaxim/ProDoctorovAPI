@@ -23,7 +23,7 @@ public class MedicamentRepository {
 
     public Medicament find(Long id) throws SQLException {
         try {
-            PreparedStatement preparedStatement = Objects.requireNonNull(connection.prepareStatement("SELECT medicament_id, medicament_name, name_substance" +
+            PreparedStatement preparedStatement = Objects.requireNonNull(connection.prepareStatement("SELECT medicament_id, medicament_name, name_substance, " +
                     "recomendation FROM medicament WHERE medicament_id = ?"));
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();

@@ -10,8 +10,8 @@ import java.sql.SQLException;
 
 import static dbtest.TestData.DOCTOR;
 import static dbtest.TestData.MEDICAMENT;
-import static org.testng.AssertJUnit.*;
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.*;
+
 
 public class MedicamentRepositoryTest {
     ConnectionBuilderTest connectionBuilderTest = new ConnectionBuilderTest();

@@ -8,7 +8,7 @@ import repositories.DoctorRepository;
 import java.sql.SQLException;
 
 import static dbtest.TestData.*;
-import static org.testng.AssertJUnit.*;
+import static org.junit.Assert.*;
 
 
 public class DoctorRepositoryTest {
